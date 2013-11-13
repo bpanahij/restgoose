@@ -23,12 +23,11 @@
   "dependencies" : {
     "express"   :  "*",
     "mongoose"  :  "*",
-    "http"      :  "*",
     "underscore":  "*"
   },
   "analyze": false,
   "devDependencies": {
-    "vows"    :  "0.5.x",
+    "vows"    :  "0.5.x"
   },
   "license": "MIT",
   "engines": {
