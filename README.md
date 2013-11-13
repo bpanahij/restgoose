@@ -15,11 +15,14 @@ npm install restgoose
 You can easily use restgoose like so:
 
 ```Javascript
+// Connecting to Mongoose at server level
+var mongoose = require ('mongoose');
+mongoose.connect('mongodb://localhost/my_database');
 // Loading restful module
-var restful = require('restgoose');
+var restgoose = require('restgoose');
 /** 
- * Using restful middleware at /resources URL, 
+ * Using restgoose middleware at /resources URL,
  * for all models in models directory
  */
-app.use('/resources', restful(__dirname + '/models'));
+app.use('/resources', restgoose(__dirname + '/models'));
 ```

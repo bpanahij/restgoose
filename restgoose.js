@@ -11,7 +11,7 @@ var express = require('express')
 /**
  * Connect with Mongo DB
  */
-//mongoose.connect('mongodb://localhost/tiro');
+api.use(express.methodOverride());
 /**
  * Parse the JSON body
  */
