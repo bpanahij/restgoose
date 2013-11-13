@@ -1,0 +1,36 @@
+{
+  "name": "restgoose",
+  "preferGlobal": false,
+  "version": "0.1.0",
+  "author": "Brian Johnson <brian@pjohnson.info>",
+  "description": "RESTify Mongoose Models in Express/NodeJS",
+  "contributors": [ 
+    {
+      "name": "Brian Johnson",
+      "email": "brian@pjohnson.info"
+    } 
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bpanahij/restgoose.git"
+  },
+  "keywords": [
+    "mongoose",
+    "REST",
+    "Node.js"
+  ],
+  "dependencies" : {
+    "express"   :  "*",
+    "mongoose"  :  "*",
+    "http"      :  "*",
+    "underscore":  "*"
+  },
+  "analyze": false,
+  "devDependencies": {
+    "vows"    :  "0.5.x",
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
