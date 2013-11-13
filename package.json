@@ -1,15 +1,12 @@
 {
   "name": "restgoose",
   "preferGlobal": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Brian Johnson <brian@pjohnson.info>",
   "description": "RESTify Mongoose Models in Express/NodeJS",
   "main": "./restful.js",
-  "contributors": [ 
-    {
-      "name": "Brian Johnson",
-      "email": "brian@pjohnson.info"
-    } 
+  "contributors": [
+    "Brian Johnson <brian@pjohnson.info>"
   ],
   "repository": {
     "type": "git",
@@ -20,17 +17,26 @@
     "REST",
     "Node.js"
   ],
-  "dependencies" : {
-    "express"   :  "*",
-    "mongoose"  :  "*",
-    "underscore":  "*"
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "underscore": "*"
   },
   "analyze": false,
   "devDependencies": {
-    "vows"    :  "0.5.x"
+    "vows": "0.5.x"
   },
   "license": "MIT",
   "engines": {
     "node": ">=0.6"
+  },
+  "bugs": {
+    "url": "https://github.com/bpanahij/restgoose/issues"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
