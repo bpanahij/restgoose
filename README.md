@@ -12,7 +12,7 @@ To install just use:
 npm install resting-mongoose
 ```
 
-You can easily use restgoose like so:
+You can easily use resting-mongoose like so:
 
 ```Javascript
 // Connecting to Mongoose at server level
