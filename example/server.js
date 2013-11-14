@@ -4,7 +4,7 @@
 var express = require('express')
   , http = require('http')
   , mongoose = require('mongoose')
-  , restgoose = require('restgoose');
+  , resting_mongoose = require('../restgoose');
 /**
  *  Establishing database connectivity for entire server side app
  */
@@ -13,19 +13,11 @@ mongoose.connect('mongodb://localhost/my_database');
  * Creating server app
  */
 var app = express();
-app.set('port', 80);
-/**
- * and configuring Middle-ware
- */
-app.use(express.methodOverride());
-/**
- * Optional router
- */
-app.use(app.router);
+app.set('port', 8081);
 /**
  * Provide restful data services /resources
  */
-app.use('/resources', restgoose(__dirname + '/models'));
+app.use('/resources', resting_mongoose(__dirname + '/models'));
 /**
  * Starting Express HTTP Server
  */
