@@ -1,7 +1,7 @@
 {
   "name": "resting-mongoose",
   "preferGlobal": false,
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Brian Johnson <brian@pjohnson.info>",
   "description": "RESTify Mongoose Models in Express/NodeJS",
   "main": "./restful.js",
