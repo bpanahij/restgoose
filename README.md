@@ -1,4 +1,4 @@
-restgoose
+resting-mongoose
 =========
 
 # Restify Mongoose Models
