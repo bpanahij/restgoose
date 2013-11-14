@@ -20,7 +20,8 @@
   "dependencies": {
     "express": "*",
     "mongoose": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "bcrypt": "*"
   },
   "analyze": false,
   "devDependencies": {
