@@ -9,7 +9,7 @@ Making Mongoose models in NodeJS RESTful, by making an Express middleware layer 
 To install just use:
 
 ```sh
-npm install restgoose
+npm install resting-mongoose
 ```
 
 You can easily use restgoose like so:
@@ -19,12 +19,12 @@ You can easily use restgoose like so:
 var mongoose = require ('mongoose');
 mongoose.connect('mongodb://localhost/my_database');
 // Loading restful module
-var restgoose = require('restgoose');
+var resting_mongoose = require('resting-mongoose');
 /** 
- * Using restgoose middleware at /resources URL,
+ * Using resting_mongoose middleware at /resources URL,
  * for all models in models directory
  */
-app.use('/resources', restgoose(__dirname + '/models'));
+app.use('/resources', resting_mongoose(__dirname + '/models'));
 ```
 # Accessing via HTTP
 
