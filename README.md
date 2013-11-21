@@ -1,6 +1,6 @@
 resting-mongoose
 =========
-
+![alt 'resting mongoose'](http://upload.wikimedia.org/wikipedia/commons/f/f2/Banded_mongoose_arp.jpg)
 # Restify Mongoose Models
 
 Making Mongoose models in NodeJS RESTful, by making an Express middleware layer to automatically add REST methods to each model in a directory.
