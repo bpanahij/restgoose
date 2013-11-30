@@ -20,11 +20,14 @@
   "dependencies": {
     "express": "*",
     "mongoose": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "q": "~0.9.7",
+    "natural": "~0.1.24",
+    "optimist": "~0.6.0"
   },
   "analyze": false,
   "devDependencies": {
-    "vows": "0.5.x"
+    "vows": "~0.7.0"
   },
   "license": "MIT",
   "engines": {

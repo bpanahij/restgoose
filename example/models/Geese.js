@@ -1,12 +1,21 @@
-var mongoose = require ('mongoose');
+var mongoose = require('mongoose');
 /**
  * Geese Collection
- * @type {Schema}
  */
-var GooseSchema = new mongoose.Schema ({
+var GooseSchema = new mongoose.Schema({
   name: String,
   species: String,
   thumbnailURL: String,
   birthDate: { type: Date, default: Date.now }
 });
-module.exports = mongoose.model ("Goose", GooseSchema);
+/*
+  export schema model
+ */
+var model = mongoose.model("Goose", GooseSchema);
+model.prompts = {
+  name: 'Goose Name',
+  species: 'Species',
+  thumbnailURL: 'Thumbnail Image',
+  birthDate: 'Birth Date'
+};
+module.exports = model;
