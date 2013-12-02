@@ -46,12 +46,12 @@ var getProperties = function(model, types, postFix, description) {
       title: mpath,
       description: mpath + ' ' + description,
       identity: mpath == '_id' ? true : false,
-      readonly: mpath == '_id' ? true : false,
-//      required: true
+      readonly: mpath == '_id' ? true : false
+      //      required: true
     };
     if (type == 'String') {
-//      d.maxLength = 100;
-//      d.minLength = 0;
+      //      d.maxLength = 100;
+      //      d.minLength = 0;
     }
     switch(type) {
       case 'Date':
@@ -116,33 +116,34 @@ var getLinks = function(resource_path, model) {
     properties: properties
   });
   data.push({
+    title: 'Create a ' + model.modelName,
     rel: "create",
     href: path.join(resource_path, resourceName(model)),
     properties: getProperties(model, ['String', 'Number', 'Date', 'Mixed', 'Boolean'])
   });
   data.push({
-    "rel": "destroy",
-    "href": path.join(resource_path, resourceName(model), "{_id}"),
-    "method": "DELETE"
+    rel: "destroy",
+    href: path.join(resourceName(model), "{_id}"),
+    method: "DELETE"
   })
   data.push({
-    "rel": "update",
-    "href": path.join(resource_path, resourceName(model), "{_id}"),
-    "method": "PUT"
+    title: 'Update a ' + model.modelName,
+    rel: "update",
+    href: path.join(resource_path, resourceName(model), "{_id}"),
+    properties: getProperties(model, ['String', 'Number', 'Date', 'Mixed', 'Boolean']),
+    method: "PUT"
   });
   data.push({
-    "rel": "root",
-    "href": "#/result"
+    rel: "root",
+    href: "#/result"
   })
   return data;
 };
 /**
- * REST Hypermedia configuration
- * @param host
- * @param version
+ *
+ * @param model_path
  * @param model
- * @param rel
- * @returns {{type: string, title: , name: , description: string, properties: , links: }}
+ * @returns {{$schema: string, type: string, title: *, name: *, description: string, properties: {}, links: Array}}
  */
 var generateSchema = function(model_path, model) {
   var links = getLinks(model_path, model);

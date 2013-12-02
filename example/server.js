@@ -30,12 +30,7 @@ app.use(express.static(coreAssets, { maxAge: oneDay }));
 /**
  * Provide restful data services /resources
  */
-var configuration = {
-  host: 'localhost:8080',
-  version: 'v1.0',
-  rel: ''
-};
-app.use('/api', resting_mongoose(__dirname + '/models', configuration));
+app.use('/', resting_mongoose(__dirname + '/models', '/api/v1.0'));
 /**
  * Starting Express HTTP Server
  */

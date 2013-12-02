@@ -20,10 +20,6 @@ var optionsM = require('./verbs/options')
   , deleteM = require('./verbs/delete')
   , headM = require('./verbs/head');
 /*
- Configuration
- */
-var config = {};
-/*
  Utility methods
  */
 var loadModels = function(modelDir, callback) {
@@ -42,9 +38,7 @@ api.use(express.bodyParser());
 /**
  * Main method
  */
-var rest = function(modelDir, configuration) {
-  config = configuration,
-    resource_path = '/' + path.join(config.version, config.rel);
+var rest = function(modelDir, resource_path) {
   loadModels(modelDir, function(err, models) {
     var rootSchema = root_generator(resource_path, models);
     api.options(resource_path, function(req, res) {
