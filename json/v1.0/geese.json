@@ -1,0 +1,306 @@
+{
+  "type": "object",
+  "title": "geese",
+  "name": "geese",
+  "description": "",
+  "properties": {
+    "name": {
+      "title": "name",
+      "description": "name ",
+      "identity": false,
+      "readonly": false,
+      "required": true,
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "species": {
+      "title": "species",
+      "description": "species ",
+      "identity": false,
+      "readonly": false,
+      "required": true,
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "thumbnailURL": {
+      "title": "thumbnailURL",
+      "description": "thumbnailURL ",
+      "identity": false,
+      "readonly": false,
+      "required": true,
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "birthDate": {
+      "title": "birthDate",
+      "description": "birthDate ",
+      "identity": false,
+      "readonly": false,
+      "required": true,
+      "type": "date-time"
+    },
+    "_id": {
+      "title": "_id",
+      "description": "_id ",
+      "identity": true,
+      "readonly": true,
+      "required": true,
+      "type": "string"
+    }
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "geese/{_id}"
+    },
+    {
+      "rel": "instances",
+      "href": "geese",
+      "properties": {
+        "offset": {
+          "title": "offset",
+          "description": "Offset to start with",
+          "required": false,
+          "type": "number"
+        },
+        "limit": {
+          "title": "limit",
+          "description": "Number of items to return",
+          "required": false,
+          "type": "number"
+        },
+        "name": {
+          "title": "name",
+          "description": "name is equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "species": {
+          "title": "species",
+          "description": "species is equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL is equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "birthDate": {
+          "title": "birthDate",
+          "description": "birthDate is equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "type": "date-time"
+        },
+        "name*": {
+          "title": "name",
+          "description": "name contains",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "species*": {
+          "title": "species",
+          "description": "species contains",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL*": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL contains",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "name>": {
+          "title": "name",
+          "description": "name is greater than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "species>": {
+          "title": "species",
+          "description": "species is greater than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL>": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL is greater than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "birthDate>": {
+          "title": "birthDate",
+          "description": "birthDate is greater than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "type": "date-time"
+        },
+        "name<": {
+          "title": "name",
+          "description": "name is less than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "species<": {
+          "title": "species",
+          "description": "species is less than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL<": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL is less than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "birthDate<": {
+          "title": "birthDate",
+          "description": "birthDate is less than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "type": "date-time"
+        },
+        "name!": {
+          "title": "name",
+          "description": "name is not equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "species!": {
+          "title": "species",
+          "description": "species is not equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL!": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL is not equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        }
+      }
+    },
+    {
+      "rel": "create",
+      "href": "geese",
+      "properties": {
+        "name": {
+          "title": "name",
+          "description": "name ",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "species": {
+          "title": "species",
+          "description": "species ",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL ",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "birthDate": {
+          "title": "birthDate",
+          "description": "birthDate ",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "type": "date-time"
+        }
+      }
+    },
+    {
+      "rel": "destroy",
+      "href": "geese/{id}",
+      "method": "DELETE"
+    },
+    {
+      "rel": "update",
+      "href": "geese/{id}",
+      "method": "PUT"
+    }
+  ]
+}

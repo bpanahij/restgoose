@@ -1,0 +1,306 @@
+{
+  "type": "object",
+  "title": "news",
+  "name": "news",
+  "description": "",
+  "properties": {
+    "title": {
+      "title": "title",
+      "description": "title ",
+      "identity": false,
+      "readonly": false,
+      "required": true,
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "body": {
+      "title": "body",
+      "description": "body ",
+      "identity": false,
+      "readonly": false,
+      "required": true,
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "thumbnailURL": {
+      "title": "thumbnailURL",
+      "description": "thumbnailURL ",
+      "identity": false,
+      "readonly": false,
+      "required": true,
+      "maxLength": 100,
+      "minLength": 0,
+      "type": "string"
+    },
+    "createdDate": {
+      "title": "createdDate",
+      "description": "createdDate ",
+      "identity": false,
+      "readonly": false,
+      "required": true,
+      "type": "date-time"
+    },
+    "_id": {
+      "title": "_id",
+      "description": "_id ",
+      "identity": true,
+      "readonly": true,
+      "required": true,
+      "type": "string"
+    }
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "news/{_id}"
+    },
+    {
+      "rel": "instances",
+      "href": "news",
+      "properties": {
+        "offset": {
+          "title": "offset",
+          "description": "Offset to start with",
+          "required": false,
+          "type": "number"
+        },
+        "limit": {
+          "title": "limit",
+          "description": "Number of items to return",
+          "required": false,
+          "type": "number"
+        },
+        "title": {
+          "title": "title",
+          "description": "title is equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "body": {
+          "title": "body",
+          "description": "body is equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL is equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "createdDate": {
+          "title": "createdDate",
+          "description": "createdDate is equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "type": "date-time"
+        },
+        "title*": {
+          "title": "title",
+          "description": "title contains",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "body*": {
+          "title": "body",
+          "description": "body contains",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL*": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL contains",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "title>": {
+          "title": "title",
+          "description": "title is greater than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "body>": {
+          "title": "body",
+          "description": "body is greater than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL>": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL is greater than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "createdDate>": {
+          "title": "createdDate",
+          "description": "createdDate is greater than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "type": "date-time"
+        },
+        "title<": {
+          "title": "title",
+          "description": "title is less than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "body<": {
+          "title": "body",
+          "description": "body is less than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL<": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL is less than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "createdDate<": {
+          "title": "createdDate",
+          "description": "createdDate is less than",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "type": "date-time"
+        },
+        "title!": {
+          "title": "title",
+          "description": "title is not equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "body!": {
+          "title": "body",
+          "description": "body is not equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL!": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL is not equal to",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        }
+      }
+    },
+    {
+      "rel": "create",
+      "href": "news",
+      "properties": {
+        "title": {
+          "title": "title",
+          "description": "title ",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "body": {
+          "title": "body",
+          "description": "body ",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "thumbnailURL": {
+          "title": "thumbnailURL",
+          "description": "thumbnailURL ",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "maxLength": 100,
+          "minLength": 0,
+          "type": "string"
+        },
+        "createdDate": {
+          "title": "createdDate",
+          "description": "createdDate ",
+          "identity": false,
+          "readonly": false,
+          "required": true,
+          "type": "date-time"
+        }
+      }
+    },
+    {
+      "rel": "destroy",
+      "href": "news/{id}",
+      "method": "DELETE"
+    },
+    {
+      "rel": "update",
+      "href": "news/{id}",
+      "method": "PUT"
+    }
+  ]
+}
